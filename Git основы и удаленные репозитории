@@ -1,0 +1,133 @@
+Тип задач “Основы“:
+1 задание
+git commit x2
+
+2 задание
+git checkout -b bugFix
+
+3 задание
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git merge bugFix
+
+4 задание
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+
+5 задание
+git checkout с4
+
+6 задание
+git checkout bugFix^
+
+7 задание
+git checkout C1
+git branch -f bugFix HEAD~1
+git checkout C6
+git branch -f main HEAD
+git checkout C1
+
+8 задание
+git reset local~1
+git checkout pushed
+git revert pushed
+
+9 задание
+git cherry-pick с3 с4 с7
+
+Тип задач “Удаленные репозитории“:
+1 задание
+git clone
+
+2 задание
+git commit
+git checkout o/main
+git commit
+
+3 задание
+git fetch
+
+4 задание
+git pull
+
+5 задание
+git clone
+git fakeTeamwork
+git fakeTeamwork
+git commit
+git fetch
+git pull
+
+6 задание
+git commit
+git commit
+git push
+
+7 задание
+git clone
+git fakeTeamwork
+git commit
+git pull --rebase
+git push
+
+8 задание
+git branch feature
+git merge feature
+git reset c1
+git checkout feature
+git push
+
+9 задание
+git fetch
+git checkout side1
+git rebase o/main
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 o/main
+git rebase o/main main
+git push
+
+10 задание
+git fetch
+git checkout side1
+git merge o/main
+git checkout side2
+git merge side1
+git merge side3
+git checkout main
+git merge side2
+git push
+
+11 задание
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+
+12 задание
+git push origin main
+git push origin foo
+
+13 задание
+git push origin main~1:foo
+git push origin foo:main
+
+14 задание
+git fetch origin main~1:foo
+git fetch origin foo:main
+git checkout foo
+git merge main
+
+15 задание
+git push origin :foo
+git fetch origin :bar
+
+16 задание
+git pull origin bar:foo
+git pull origin main:side
