@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+     <title>JavaScript</title>
+     <style>
+        .btn { background-color: rgb(154, 153, 224); }
+        div {
+            display: grid; 
+            grid-template-columns: auto;
+            justify-content: center;
+            gap: 8px;}
+    </style>
+   </head>
+   <body>
+    <div>
+        <h3><center><a href="https://learn.javascript.ru/hello-world">Алерты</a></center></h3>
+    <button id="btn" class="btn">Вызывать алерт</button>
+      <script>
+      let btn = document.getElementById('btn');
+        if(btn){
+            btn.addEventListener('click', function(event){
+            alert("Я JavaScript!");
+                });
+                }
+        </script>
+        <h3> <center><a href="https://learn.javascript.ru/variables">Переменные</a></center> </h3>
+    <button id="btn1" class="btn">Задать переменные и вызвать алерт</button>
+            <script>
+                let btn1 = document.getElementById('btn1');
+                    if(btn1){
+                        btn1.addEventListener('click', function(event){
+                            let admin ;
+                            let name;
+                            name = 'Джон';
+                            admin = name;
+                            alert(admin);
+                            });
+                            }
+            </script>
+    <button id="btn2" class="btn">Придумать переменные</button>
+    <script>
+        let btn2 = document.getElementById('btn2');
+            if(btn2){
+                btn2.addEventListener('click', function(event){
+                    let ourPlanetName = 'Земля';
+                    let currentUserName = "Васян";
+                    });
+                    }
+    </script>
+    <button id="btn3" class="btn">Назвать константы</button>
+          <script>
+            let btn3 = document.getElementById('btn3');
+                if(btn3){
+                    btn3.addEventListener('click', function(event){
+                        const BIRTHDAY = '18.04.1982';
+                        const age = someCode(BIRTHDAY); 
+                        });
+                        }
+        </script>
+        </div>
+   </body>
+</html>
