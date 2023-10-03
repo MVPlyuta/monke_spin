@@ -38,26 +38,17 @@
                             });
                             }
             </script>
-    <button id="btn2" class="btn">Придумать переменные</button>
-    <script>
-        let btn2 = document.getElementById('btn2');
-            if(btn2){
-                btn2.addEventListener('click', function(event){
-                    let ourPlanetName = 'Земля';
-                    let currentUserName = "Васян";
-                    });
-                    }
-    </script>
-    <button id="btn3" class="btn">Назвать константы</button>
-          <script>
-            let btn3 = document.getElementById('btn3');
-                if(btn3){
-                    btn3.addEventListener('click', function(event){
-                        const BIRTHDAY = '18.04.1982';
-                        const age = someCode(BIRTHDAY); 
-                        });
-                        }
-        </script>
+<h3> <center><a href="https://learn.javascript.ru/alert-prompt-confirm">Взаимодействие</a></center> </h3>
+<button id="btn2" class="btn">Спросить имя пользователя</button>
+            <script>
+                let btn2 = document.getElementById('btn2');
+                    if(btn2){
+                        btn2.addEventListener('click', function(event){
+                            let clientname = prompt('Как тебя зовут?');
+                            alert(clientname);
+                            });
+                            }
+            </script>
         </div>
    </body>
 </html>
