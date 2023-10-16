@@ -4,12 +4,12 @@
     <meta charset="utf-8">
      <title>JavaScript</title>
      <style>
-        .btn { background-color: rgb(154, 153, 224); }
+        .btn { background-color: rgb(217, 128, 240); }
         div {
             display: grid; 
             grid-template-columns: auto;
             justify-content: center;
-            gap: 8px;}
+            gap: 7px;}
     </style>
    </head>
    <body>
@@ -46,6 +46,37 @@
                         btn2.addEventListener('click', function(event){
                             let clientname = prompt('Как тебя зовут?');
                             alert(clientname);
+                            });
+                            }
+            </script>
+<h3> <center><a href="https://learn.javascript.ru/alert-prompt-confirm">Условное ветвление</a></center> </h3>
+<button id="btn3" class="btn">Название</button>
+            <script>
+                let btn3 = document.getElementById('btn3');
+                    if(btn3){
+                        btn3.addEventListener('click', function(event){
+                            let namejs = prompt('Какое «официальное» название JavaScript?', '');
+                           if (namejs == 'ECMAScript') {
+                        alert( 'Верно!' );
+                              } else {
+                         alert( 'Не знаете? ECMAScript!' );
+                          }
+                            });
+                            }
+            </script>
+<button id="btn4" class="btn">Ввод номера</button>
+            <script>
+                let btn4 = document.getElementById('btn4');
+                    if(btn4){
+                        btn4.addEventListener('click', function(event){
+                            let number = prompt('Введите число', '');
+                            if (number > 0) {
+                         alert( '1' );
+                        } else if (number < -1) {
+                        alert( '-1' );
+                        } else if (number == 0) {
+                        alert( '0' );
+                        }
                             });
                             }
             </script>
