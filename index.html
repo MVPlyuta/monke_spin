@@ -15,102 +15,102 @@
    <body>
     <div>
         <h3><center><a href="https://learn.javascript.ru/hello-world">Алерты</a></center></h3>
-    <button id="btn" class="btn">Вызывать алерт</button>
-      <script>
-      let btn = document.getElementById('btn');
+        <button id="btn" class="btn">Вызывать алерт</button>
+        <script>
+        let btn = document.getElementById('btn');
         if(btn){
             btn.addEventListener('click', function(event){
             alert("Я JavaScript!");
-                });
-                }
+            });
+            }
         </script>
         <h3> <center><a href="https://learn.javascript.ru/variables">Переменные</a></center> </h3>
-    <button id="btn1" class="btn">Задать переменные и вызвать алерт</button>
-            <script>
-                let btn1 = document.getElementById('btn1');
-                    if(btn1){
-                        btn1.addEventListener('click', function(event){
-                            let admin ;
-                            let name;
-                            name = 'Джон';
-                            admin = name;
-                            alert(admin);
-                            });
-                            }
-            </script>
-<h3> <center><a href="https://learn.javascript.ru/alert-prompt-confirm">Взаимодействие</a></center> </h3>
-<button id="btn2" class="btn">Спросить имя пользователя</button>
-            <script>
-                let btn2 = document.getElementById('btn2');
-                    if(btn2){
-                        btn2.addEventListener('click', function(event){
-                            let clientname = prompt('Как тебя зовут?');
-                            alert(clientname);
-                            });
-                            }
-            </script>
-<h3> <center><a href="https://learn.javascript.ru/ifelse">Условное ветвление</a></center> </h3>
-<button id="btn3" class="btn">Название</button>
-            <script>
-                let btn3 = document.getElementById('btn3');
-                    if(btn3){
-                        btn3.addEventListener('click', function(event){
-                            let namejs = prompt('Какое «официальное» название JavaScript?', '');
-                           if (namejs == 'ECMAScript') {
-                        alert( 'Верно!' );
-                              } else {
-                         alert( 'Не знаете? ECMAScript!' );
-                          }
-                            });
-                            }
-            </script>
-<button id="btn4" class="btn">Ввод номера</button>
-            <script>
-                let btn4 = document.getElementById('btn4');
-                    if(btn4){
-                        btn4.addEventListener('click', function(event){
-                            let number = prompt('Введите число', '');
-                            if (number > 0) {
-                         alert( '1' );
-                        } else if (number < -1) {
-                        alert( '-1' );
-                        } else if (number == 0) {
-                        alert( '0' );
-                        }
-                            });
-                            }
-            </script>
-            <h3> <center><a href="https://learn.javascript.ru/logical-operators">Логические операторы</a></center> </h3>
-            <button id="btn5" class="btn">Проверка логина</button>
-                        <script>
-                            let btn5 = document.getElementById('btn5');
-                                if(btn5){
-                                    btn5.addEventListener('click', function(event){
-                                        let username = prompt('Кто там?', '');
-                                        if (username == 'Админ') {
-                                          let password = prompt('Пароль?', '');
-                                          if (password == 'Я главный') {
-                                          alert( 'Здравствуйте!' );
-                                          } 
-                                          else if (password != 'Я главный') {
-                                          alert( 'Неверный пароль' );
-                                          } 
-                                          else if (password == 'null') {
-                                          alert( 'Отменено' );
-                                     } 
-                                     } 
-                                     else if (username == '') {
-                                    alert( 'Отменено' );
-                                     } 
-                                     else if (username == 'null') {
-                                    alert( 'Отменено' );
-                                     }
-                                     else if (username != 'Админ') {
-                                    alert( 'Я вас не знаю' );
-                                     }
-                                        });
-                                        }
-                        </script>
+        <button id="btn1" class="btn">Задать переменные и вызвать алерт</button>
+        <script>
+        let btn1 = document.getElementById('btn1');
+            if(btn1){
+            btn1.addEventListener('click', function(event){
+            let admin ;
+            let name;
+            name = 'Джон';
+            admin = name;
+            alert(admin);
+            });
+            }
+        </script>
+        <h3><center><a href="https://learn.javascript.ru/alert-prompt-confirm">Взаимодействие</a></center> </h3>
+        <button id="btn2" class="btn">Спросить имя пользователя</button>
+        <script>
+            let btn2 = document.getElementById('btn2');
+            if(btn2){
+            btn2.addEventListener('click', function(event){
+            let clientname = prompt('Как тебя зовут?');
+            alert(clientname);
+            });
+            }
+        </script>
+        <h3> <center><a href="https://learn.javascript.ru/ifelse">Условное ветвление</a></center> </h3>
+        <button id="btn3" class="btn">Название</button>
+        <script>
+            let btn3 = document.getElementById('btn3');
+            if(btn3){
+            btn3.addEventListener('click', function(event){
+            let namejs = prompt('Какое «официальное» название JavaScript?', '');
+            if (namejs == 'ECMAScript') {
+            alert( 'Верно!' );
+            } else {
+            alert( 'Не знаете? ECMAScript!' );
+            }
+            });
+            }
+        </script>
+        <button id="btn4" class="btn">Ввод номера</button>
+        <script>
+            let btn4 = document.getElementById('btn4');
+            if(btn4){
+            btn4.addEventListener('click', function(event){
+            let number = prompt('Введите число', '');
+            if (number > 0) {
+            alert( '1' );
+            } else if (number < -1) {
+            alert( '-1' );
+            } else if (number == 0) {
+            alert( '0' );
+            }
+            });
+            }
+        </script>
+        <h3> <center><a href="https://learn.javascript.ru/logical-operators">Логические операторы</a></center> </h3>
+        <button id="btn5" class="btn">Проверка логина</button>
+        <script>
+            let btn5 = document.getElementById('btn5');
+            if(btn5){
+            btn5.addEventListener('click', function(event){
+            let username = prompt('Кто там?', '');
+            if (username == 'Админ') {
+                let password = prompt('Пароль?', '');
+                if (password == 'Я главный') {
+                alert( 'Здравствуйте!' );
+                } 
+                else if (password != 'Я главный') {
+                alert( 'Неверный пароль' );
+                } 
+                else if (password == 'null') {
+                alert( 'Отменено' );
+                } 
+            } 
+            else if (username == '') {
+            alert( 'Отменено' );
+            } 
+            else if (username == 'null') {
+            alert( 'Отменено' );
+            }
+            else if (username != 'Админ') {
+            alert( 'Я вас не знаю' );
+            }
+            });
+            }
+        </script>
         </div>
    </body>
 </html>
